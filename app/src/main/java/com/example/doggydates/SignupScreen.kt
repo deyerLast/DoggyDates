@@ -9,8 +9,14 @@ class SignupScreen : AppCompatActivity() {
         setContentView(R.layout.activity_signup_screen)
 
         val actionBar = supportActionBar
+        /*if(actionBar != null){
+            actionBar.title = "Login"
+        }*/
         actionBar!!.title = "Sign Up"
 
         actionBar.setDisplayHomeAsUpEnabled(true) //Set up arrow to go back within the app
+
+
+
     }
 }
