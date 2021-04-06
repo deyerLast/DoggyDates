@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "602050796016",
+    "project_id": "doggydates-143a5",
+    "storage_bucket": "doggydates-143a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602050796016:android:e897dad31be7ea8973a535",
+        "android_client_info": {
+          "package_name": "com.example.doggydates"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602050796016-tcuahn672e3du5tbs3g2994ifp4tel09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuy6PjIUEAuwsd-_Ew-3Fa_4WOiGvdFH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602050796016-tcuahn672e3du5tbs3g2994ifp4tel09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602050796016:android:1220bd47d261042573a535",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602050796016-tcuahn672e3du5tbs3g2994ifp4tel09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuy6PjIUEAuwsd-_Ew-3Fa_4WOiGvdFH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602050796016-tcuahn672e3du5tbs3g2994ifp4tel09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

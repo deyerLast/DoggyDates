@@ -4,61 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dog1"
+    android:background="@drawable/dog2"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="116dp"
-        android:layout_height="52dp"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
         android:layout_marginTop="56dp"
-        android:text="@string/doggy_dates"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textAlignment="center"
         android:textColor="#DC146A05"
+        android:textSize="50dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/prograssBar"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.256" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
-        android:layout_width="372dp"
-        android:layout_height="53dp"
-        android:textColorHint="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="318dp"
+        android:layout_height="62dp"
+        android:drawableEnd="@drawable/white_lock"
+        android:drawableRight="@drawable/white_lock"
+        android:hint="@string/password"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.865">
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:drawableEnd="@drawable/ic_baseline_mail_24"
-            android:drawableRight="@drawable/ic_baseline_mail_24"
-            android:hint="@string/email" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="372dp"
-        android:layout_height="53dp"
-        android:textColorHint="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="310dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/white_mail"
+        android:drawableRight="@drawable/white_mail"
+        android:hint="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/prograssBar"
-        tools:ignore="MissingConstraints">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:drawableEnd="@drawable/ic_baseline_lock_24"
-            android:drawableRight="@drawable/ic_baseline_lock_24"
-            android:hint="@string/password" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/loginButton"
@@ -68,12 +60,11 @@
         android:text="@string/login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
@@ -95,14 +86,12 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/loginButton"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
         tools:ignore="MissingConstraints" />
 
     <ProgressBar
-        android:id="@+id/prograssBar"
+        android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
